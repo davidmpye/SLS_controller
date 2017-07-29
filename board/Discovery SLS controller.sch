@@ -1,0 +1,377 @@
+EESchema Schematic File Version 2
+LIBS:Discovery SLS controller-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:logo
+LIBS:maxim
+LIBS:mechanical
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:motor_drivers
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:transf
+LIBS:ttl_ieee
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:zetex
+LIBS:Zilog
+LIBS:Discovery SLS controller-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X03 P1
+U 1 1 58681BB9
+P 3100 3400
+F 0 "P1" H 3100 3600 50  0000 C CNN
+F 1 "IO_CONN" V 3200 3400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 3100 3400 50  0001 C CNN
+F 3 "" H 3100 3400 50  0000 C CNN
+	1    3100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P2
+U 1 1 58681C6D
+P 3750 3400
+F 0 "P2" H 3750 3600 50  0000 C CNN
+F 1 "SW_CONN" V 3850 3400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 3750 3400 50  0001 C CNN
+F 3 "" H 3750 3400 50  0000 C CNN
+	1    3750 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L ATTINY45-P IC1
+U 1 1 58681D30
+P 5100 2400
+F 0 "IC1" H 3950 2800 50  0000 C CNN
+F 1 "ATTINY45-P" H 6100 2000 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 6100 2400 50  0000 C CIN
+F 3 "" H 5100 2400 50  0000 C CNN
+	1    5100 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR01
+U 1 1 586820C8
+P 6900 1600
+F 0 "#PWR01" H 6900 1450 50  0001 C CNN
+F 1 "+12V" H 6900 1740 50  0000 C CNN
+F 2 "" H 6900 1600 50  0000 C CNN
+F 3 "" H 6900 1600 50  0000 C CNN
+	1    6900 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 58682169
+P 2800 3550
+F 0 "#PWR02" H 2800 3300 50  0001 C CNN
+F 1 "GND" H 2800 3400 50  0000 C CNN
+F 2 "" H 2800 3550 50  0000 C CNN
+F 3 "" H 2800 3550 50  0000 C CNN
+	1    2800 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3500 2800 3500
+Wire Wire Line
+	2800 3500 2800 3550
+$Comp
+L +12V #PWR03
+U 1 1 586821A1
+P 2800 3100
+F 0 "#PWR03" H 2800 2950 50  0001 C CNN
+F 1 "+12V" H 2800 3240 50  0000 C CNN
+F 2 "" H 2800 3100 50  0000 C CNN
+F 3 "" H 2800 3100 50  0000 C CNN
+	1    2800 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3100 2800 3400
+Wire Wire Line
+	2800 3400 2900 3400
+$Comp
+L GND #PWR04
+U 1 1 58682383
+P 3450 3550
+F 0 "#PWR04" H 3450 3300 50  0001 C CNN
+F 1 "GND" H 3450 3400 50  0000 C CNN
+F 2 "" H 3450 3550 50  0000 C CNN
+F 3 "" H 3450 3550 50  0000 C CNN
+	1    3450 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3400 3450 3400
+Wire Wire Line
+	3450 3400 3450 3550
+$Comp
+L GND #PWR05
+U 1 1 58682424
+P 6550 2950
+F 0 "#PWR05" H 6550 2700 50  0001 C CNN
+F 1 "GND" H 6550 2800 50  0000 C CNN
+F 2 "" H 6550 2950 50  0000 C CNN
+F 3 "" H 6550 2950 50  0000 C CNN
+	1    6550 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 2650 6550 2650
+Wire Wire Line
+	6550 2650 6550 2950
+Wire Wire Line
+	6900 1600 6900 1800
+$Comp
+L +5V #PWR06
+U 1 1 586824AB
+P 7850 1600
+F 0 "#PWR06" H 7850 1450 50  0001 C CNN
+F 1 "+5V" H 7850 1740 50  0000 C CNN
+F 2 "" H 7850 1600 50  0000 C CNN
+F 3 "" H 7850 1600 50  0000 C CNN
+	1    7850 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 586824C7
+P 7300 2100
+F 0 "#PWR07" H 7300 1850 50  0001 C CNN
+F 1 "GND" H 7300 1950 50  0000 C CNN
+F 2 "" H 7300 2100 50  0000 C CNN
+F 3 "" H 7300 2100 50  0000 C CNN
+	1    7300 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 1600 7850 1750
+Wire Wire Line
+	7850 1750 7700 1750
+Wire Wire Line
+	7300 2050 7300 2100
+$Comp
+L +5V #PWR08
+U 1 1 5868250F
+P 6500 2000
+F 0 "#PWR08" H 6500 1850 50  0001 C CNN
+F 1 "+5V" H 6500 2140 50  0000 C CNN
+F 2 "" H 6500 2000 50  0000 C CNN
+F 3 "" H 6500 2000 50  0000 C CNN
+	1    6500 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2000 6500 2900
+Wire Wire Line
+	6500 2150 6450 2150
+Wire Wire Line
+	6500 2900 3700 2900
+Wire Wire Line
+	3700 2900 3700 2650
+Wire Wire Line
+	3700 2650 3750 2650
+Connection ~ 6500 2150
+Wire Wire Line
+	3750 2250 3450 2250
+Wire Wire Line
+	3450 2250 3450 3300
+Wire Wire Line
+	3450 3300 3550 3300
+Wire Wire Line
+	3750 2350 3350 2350
+Wire Wire Line
+	3350 2350 3350 3500
+Wire Wire Line
+	3350 3500 3550 3500
+Text GLabel 3350 2150 0    60   Input ~ 0
+SIGNAL_OP
+Wire Wire Line
+	3350 2150 3750 2150
+$Comp
+L CP C1
+U 1 1 5868280A
+P 6900 1950
+F 0 "C1" H 6925 2050 50  0000 L CNN
+F 1 "CP" H 6925 1850 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:TantalC_SizeA_EIA-3216_HandSoldering" H 6938 1800 50  0001 C CNN
+F 3 "" H 6900 1950 50  0000 C CNN
+	1    6900 1950
+	1    0    0    -1  
+$EndComp
+Connection ~ 6900 1750
+Wire Wire Line
+	7300 2100 6900 2100
+$Comp
+L R R2
+U 1 1 58682952
+P 7400 3150
+F 0 "R2" V 7480 3150 50  0000 C CNN
+F 1 "R" V 7400 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7330 3150 50  0001 C CNN
+F 3 "" H 7400 3150 50  0000 C CNN
+	1    7400 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5868298B
+P 6900 3600
+F 0 "R1" V 6980 3600 50  0000 C CNN
+F 1 "R" V 6900 3600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6830 3600 50  0001 C CNN
+F 3 "" H 6900 3600 50  0000 C CNN
+	1    6900 3600
+	0    1    1    0   
+$EndComp
+Text GLabel 6600 3600 0    60   Input ~ 0
+SIGNAL_OP
+Wire Wire Line
+	6600 3600 6750 3600
+$Comp
+L +12V #PWR09
+U 1 1 58682AE9
+P 7400 2950
+F 0 "#PWR09" H 7400 2800 50  0001 C CNN
+F 1 "+12V" H 7400 3090 50  0000 C CNN
+F 2 "" H 7400 2950 50  0000 C CNN
+F 3 "" H 7400 2950 50  0000 C CNN
+	1    7400 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 2950 7400 3000
+$Comp
+L GND #PWR010
+U 1 1 58682B30
+P 7400 3900
+F 0 "#PWR010" H 7400 3650 50  0001 C CNN
+F 1 "GND" H 7400 3750 50  0000 C CNN
+F 2 "" H 7400 3900 50  0000 C CNN
+F 3 "" H 7400 3900 50  0000 C CNN
+	1    7400 3900
+	1    0    0    -1  
+$EndComp
+Text GLabel 7650 3350 2    60   Input ~ 0
+12V_SIGNAL_OP
+Wire Wire Line
+	7400 3300 7400 3400
+Wire Wire Line
+	7400 3350 7650 3350
+Text GLabel 2600 3300 0    60   Input ~ 0
+12V_SIGNAL_OP
+Wire Wire Line
+	2900 3300 2600 3300
+$Comp
+L BC849 Q1
+U 1 1 58682D58
+P 7300 3600
+F 0 "Q1" H 7500 3675 50  0000 L CNN
+F 1 "BC849" H 7500 3600 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 7500 3525 50  0000 L CIN
+F 3 "" H 7300 3600 50  0000 L CNN
+	1    7300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 3600 7100 3600
+Wire Wire Line
+	7400 3800 7400 3900
+Connection ~ 7400 3350
+$Comp
+L 7805-RESCUE-Discovery_SLS_controller U1
+U 1 1 58695418
+P 7300 1800
+F 0 "U1" H 7300 2115 50  0000 C CNN
+F 1 "7805" H 7300 2024 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 7300 1800 50  0001 C CNN
+F 3 "" H 7300 1800 50  0000 C CNN
+	1    7300 1800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
